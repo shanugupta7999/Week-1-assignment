@@ -5,10 +5,17 @@
 
   Once you've implemented the logic, test your code by running
   - `npm run test-anagram`
-*/
-
-function isAnagram(str1, str2) {
-
+*/let final = (string) => {
+  return string.split("").sort().join("");
 }
 
+function isAnagram(str1, str2) {
+  if (final(str1) == final(str2)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+// let ans=isAnagram("shanu","anush")
+// console.log(ans);
 module.exports = isAnagram;
